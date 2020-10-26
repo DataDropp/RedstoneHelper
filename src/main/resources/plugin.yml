@@ -1,0 +1,6 @@
+name: RedstoneHelper
+version: ${project.version}
+main: redstonehelper.redstonehelper.RedstoneHelper
+api-version: 1.16
+authors: [ hashmonopolist ]
+description: Minecraft plugin to make redstone engineer life easier
