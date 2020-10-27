@@ -1,14 +1,18 @@
-# RedstoneHelper V1.1
-Makes life of a redstone engineer a bit easier
-
+# RedstoneHelper V1.2
+Allows you to flip the direction of a redstone related block easily.
+Allows you to fill composters / end portal frames easily.
 
 # Usage
-Just hold shift and place your various redstone blocks and it'll flip the direction the block is facing.
+Hold shift & place a redstone related block that has a direction, and it'll flip the direction upon placement.
+Hold shift & right click a composter or end portal frame to fill it. Will also show you if it is filled or how much level is in the composter on the player's action bar.
 
-Great for small areas, compact, and complex builds.
+
 
 # Features
-Reverse direction works on:
+### Reverse direction
+Allows a player to reverse (flip) the direction a block was placed
+
+Support blocks:
 * Piston
 * Sticky piston
 * Repeater
@@ -22,6 +26,13 @@ Reverse direction works on:
 * Ender chest
 * Chest
 * Trapped chest
+### Filler
+Allows a player to shift + right click these blocks to change their "fullness"
+
+Supported blocks are:
+* Composter
+* End portal frame
+
 
 
 # Tested versions
@@ -29,3 +40,9 @@ Reverse direction works on:
 
 # Contributing
 Pull request for small changes, for larger changes create an issue first.
+
+### Todo
+* Filling support for furnaces.
+* Flip support for trip wire hooks.
+* Flip support for all the types of buttons.
+* A way for players to easily check the strength of a redstone wire.
