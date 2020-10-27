@@ -4,6 +4,7 @@ Allows you to fill composters / end portal frames easily.
 
 # Usage
 Hold shift & place a redstone related block that has a direction, and it'll flip the direction upon placement.
+
 Hold shift & right click a composter or end portal frame to fill it. Will also show you if it is filled or how much level is in the composter on the player's action bar.
 
 
