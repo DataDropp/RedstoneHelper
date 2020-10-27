@@ -1,4 +1,4 @@
-# RedstoneHelper V1.0
+# RedstoneHelper V1.1
 Makes life of a redstone engineer a bit easier
 
 
