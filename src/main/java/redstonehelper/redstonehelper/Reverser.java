@@ -1,19 +1,19 @@
 package redstonehelper.redstonehelper;
 
-import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.Directional;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
-
+import java.util.Arrays;
 import static org.bukkit.block.BlockFace.*;
 
 public class Reverser implements Listener {
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent event) {
         String type = event.getBlock().getType().toString();
-        if(type.equals("PISTON") || type.equals("STICKY_PISTON") || type.equals("REPEATER") || type.equals("REDSTONE_WALL_TORCH") || type.equals("DROPPER") || type.equals("DISPENSER") || type.equals("COMPARATOR") || type.equals("OBSERVER")) {
+        String[] types = {"PISTON","STICKY_PISTON","REPEATER","REDSTONE_WALL_TORCH","DROPPER","DISPENSER","COMPARATOR","OBSERVER","CHEST","ENDER_CHEST","LEVER","FURNACE","TRAPPED_CHEST"};
+        if(Arrays.stream(types).anyMatch(type::equals)) {
             if (event.getPlayer().isSneaking()) {
                 Directional direction = (Directional)event.getBlock().getBlockData();
                 switch (direction.getFacing()){

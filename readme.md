@@ -17,6 +17,12 @@ Reverse direction works on:
 * Dispenser
 * Comparator
 * Observer
+* Lever
+* Furnace
+* Ender chest
+* Chest
+* Ender chest
+
 
 # Tested versions
 * 1.16.3
