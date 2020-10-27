@@ -8,6 +8,7 @@ public final class RedstoneHelper extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new Reverser(),this);
+        getServer().getPluginManager().registerEvents(new Filler(),this);
         Bukkit.getLogger().info("Hello bukkit! :)");
     }
     @Override
