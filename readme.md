@@ -21,7 +21,7 @@ Reverse direction works on:
 * Furnace
 * Ender chest
 * Chest
-* Ender chest
+* Trapped chest
 
 
 # Tested versions
