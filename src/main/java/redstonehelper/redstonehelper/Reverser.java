@@ -12,11 +12,25 @@ public class Reverser implements Listener {
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent event) {
         String type = event.getBlock().getType().toString();
-        String[] types = {"PISTON","STICKY_PISTON","REPEATER","REDSTONE_WALL_TORCH","DROPPER","DISPENSER","COMPARATOR","OBSERVER","CHEST","ENDER_CHEST","LEVER","FURNACE","TRAPPED_CHEST"};
-        if(Arrays.stream(types).anyMatch(type::equals)) {
+        String[] types = {
+                "PISTON",
+                "STICKY_PISTON",
+                "REPEATER",
+                "REDSTONE_WALL_TORCH",
+                "DROPPER",
+                "DISPENSER",
+                "COMPARATOR",
+                "OBSERVER",
+                "CHEST",
+                "ENDER_CHEST",
+                "LEVER",
+                "FURNACE",
+                "TRAPPED_CHEST"
+        };
+        if(Arrays.asList(types).contains(type)) {
             if (event.getPlayer().isSneaking()) {
                 Directional direction = (Directional)event.getBlock().getBlockData();
-                switch (direction.getFacing()){
+                switch (direction.getFacing()) {
                     case NORTH:
                         direction.setFacing(BlockFace.SOUTH);
                         event.getBlock().setBlockData(direction.clone());
