@@ -32,7 +32,7 @@ public class Filler implements Listener {
                 event.getClickedBlock().setBlockData(level);
                 event.getClickedBlock().getState().update();
             }
-            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("Composter level: "+ level.getLevel()));
+            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§cComposter level: §a"+ level.getLevel()));
         } else if(event.getClickedBlock().getType().toString().equals("END_PORTAL_FRAME")){
             event.setCancelled(true);
             EndPortalFrame block = (EndPortalFrame) event.getClickedBlock().getBlockData();
@@ -45,7 +45,7 @@ public class Filler implements Listener {
                 event.getClickedBlock().setBlockData(block);
                 event.getClickedBlock().getState().update();
             }
-            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("Eye: "+ block.hasEye()));
+            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§cEye: §a"+ block.hasEye()));
         }
     }
 }
