@@ -23,7 +23,7 @@ public class Filler implements Listener {
         if(!event.getHand().equals(EquipmentSlot.HAND)) return;
         if(!event.getPlayer().isSneaking()) return;
 
-        if(event.getClickedBlock().getType().toString().equals("COMPOSTER")){
+        if(plugin.getConfig().getBoolean("fillables.types.COMPOSTER.enabled") && event.getClickedBlock().getType().toString().equals("COMPOSTER")){
             event.setCancelled(true);
             Block block = event.getClickedBlock();
             Levelled level = (Levelled) block.getBlockData();
@@ -37,7 +37,7 @@ public class Filler implements Listener {
                 event.getClickedBlock().getState().update();
             }
             event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§cComposter level: §a"+ level.getLevel()));
-        } else if(event.getClickedBlock().getType().toString().equals("END_PORTAL_FRAME")){
+        } else if(plugin.getConfig().getBoolean("fillables.types.END_PORTAL_FRAME.enabled") && event.getClickedBlock().getType().toString().equals("END_PORTAL_FRAME")){
             event.setCancelled(true);
             EndPortalFrame block = (EndPortalFrame) event.getClickedBlock().getBlockData();
             if(block.hasEye()) {
