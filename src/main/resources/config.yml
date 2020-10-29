@@ -1,2 +1,30 @@
-# Enable or disable the plugin
-Enabled: true
+# RedstoneHelper v1.3
+# Enable or disable the functions of the plugin
+enabled: true
+reverse:
+  # Enable or disable ALL reversals.
+  enabled: true
+  #You can add your own types here. Please refer to the API documentation for correct names for the block.
+  #The blocks you ADD here will not be supported.
+  types:
+    - "PISTON"
+    - "STICKY_PISTON"
+    - "REPEATER"
+    - "REDSTONE_WALL_TORCH"
+    - "DROPPER"
+    - "DISPENSER"
+    - "COMPARATOR"
+    - "OBSERVER"
+    - "CHEST"
+    - "ENDER_CHEST"
+    - "LEVER"
+    - "FURNACE"
+    - "TRAPPED_CHEST"
+fillables:
+  enabled: true
+  types: # Adding your own types here will probably break the plugin.
+    # Enable or disable the SUPPORTED fillable blocks.
+    COMPOSTER:
+      enabled: true
+    END_PORTAL_FRAME:
+      enabled: true
