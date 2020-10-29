@@ -9,24 +9,14 @@ import java.util.Arrays;
 import static org.bukkit.block.BlockFace.*;
 
 public class Reverser implements Listener {
+    RedstoneHelper plugin;
+    public Reverser(RedstoneHelper instance) {
+        plugin = instance;
+    }
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent event) {
         String type = event.getBlock().getType().toString();
-        String[] types = {
-                "PISTON",
-                "STICKY_PISTON",
-                "REPEATER",
-                "REDSTONE_WALL_TORCH",
-                "DROPPER",
-                "DISPENSER",
-                "COMPARATOR",
-                "OBSERVER",
-                "CHEST",
-                "ENDER_CHEST",
-                "LEVER",
-                "FURNACE",
-                "TRAPPED_CHEST"
-        };
+        Object[] types = plugin.getConfig().getStringList("reverse.types").toArray();
         if(Arrays.asList(types).contains(type)) {
             if (event.getPlayer().isSneaking()) {
                 Directional direction = (Directional)event.getBlock().getBlockData();
