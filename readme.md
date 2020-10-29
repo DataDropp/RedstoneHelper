@@ -1,4 +1,4 @@
-# RedstoneHelper V1.2
+# RedstoneHelper V1.3
 Allows you to flip the direction of a redstone related block easily.
 Allows you to fill composters / end portal frames easily.
 
