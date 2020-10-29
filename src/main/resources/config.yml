@@ -28,3 +28,8 @@ fillables:
       enabled: true
     END_PORTAL_FRAME:
       enabled: true
+level:
+  enabled: true
+  types:
+    REDSTONE_WIRE:
+      enabled: true

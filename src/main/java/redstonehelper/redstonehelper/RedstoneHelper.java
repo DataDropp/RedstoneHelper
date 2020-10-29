@@ -17,6 +17,9 @@ public final class RedstoneHelper extends JavaPlugin implements Listener {
             if(this.getConfig().getBoolean("fillables.enabled")){
                 getServer().getPluginManager().registerEvents(new Filler(this),this);
             }
+            if(this.getConfig().getBoolean("level.enabled")) {
+                getServer().getPluginManager().registerEvents(new FetchInfo(this),this);
+            }
         }
     }
     @Override

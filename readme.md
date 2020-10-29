@@ -34,7 +34,9 @@ Supported blocks are:
 * Composter
 * End portal frame
 
-
+### Other features
+* Allows a player to shift + right click a redstone wire then it'll output the power level to the action bar.
+* Configuration support added (in v1.3)
 
 # Tested versions
 * 1.16.3
@@ -46,4 +48,3 @@ Pull request for small changes, for larger changes create an issue first.
 * Filling support for furnaces.
 * Flip support for trip wire hooks.
 * Flip support for all the types of buttons.
-* A way for players to easily check the strength of a redstone wire.
