@@ -13,6 +13,10 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 
 public class Filler implements Listener {
+    RedstoneHelper plugin;
+    public Filler(RedstoneHelper instance) {
+        plugin = instance;
+    }
     @EventHandler
     public void onBlockClick(PlayerInteractEvent event) {
         if(!event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) return;
@@ -38,13 +42,11 @@ public class Filler implements Listener {
             EndPortalFrame block = (EndPortalFrame) event.getClickedBlock().getBlockData();
             if(block.hasEye()) {
                 block.setEye(false);
-                event.getClickedBlock().setBlockData(block);
-                event.getClickedBlock().getState().update();
             } else {
                 block.setEye(true);
-                event.getClickedBlock().setBlockData(block);
-                event.getClickedBlock().getState().update();
             }
+            event.getClickedBlock().setBlockData(block);
+            event.getClickedBlock().getState().update();
             event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§cEye: §a"+ block.hasEye()));
         }
     }
