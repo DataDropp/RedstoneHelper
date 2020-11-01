@@ -1,5 +1,6 @@
 # RedstoneHelper V1.4
-Allows you to flip the direction of a redstone related block easily.
+Allows you to flip the direction of redstone related blocks easily.
+
 Allows you to fill composters / end portal frames easily.
 
 # Usage
@@ -11,7 +12,7 @@ Hold shift & right click a composter or end portal frame to fill it. Will also s
 
 # Features
 ### Reverse direction
-Allows a player to reverse (flip) the direction a block was placed
+Allows players to reverse (flip) the direction a block when placed.
 
 Support blocks:
 * Piston
@@ -29,14 +30,14 @@ Support blocks:
 * Trapped chest
 * Tripwire hook
 ### Filler
-Allows a player to shift + right click these blocks to change their "fullness"
+Allows players to shift + right click these blocks to change their "fullness"
 
 Supported blocks are:
 * Composter
 * End portal frame
 
 ### Other features
-* Allows a player to shift + right click a redstone wire then it'll output the power level to the action bar.
+* Allows players to shift + right click a redstone wire then it'll output the power level to the action bar.
 * Configuration support added (in v1.3)
 
 # Tested versions
