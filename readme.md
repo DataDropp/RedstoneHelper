@@ -1,4 +1,4 @@
-# RedstoneHelper V1.3
+# RedstoneHelper V1.4
 Allows you to flip the direction of a redstone related block easily.
 Allows you to fill composters / end portal frames easily.
 
@@ -27,6 +27,7 @@ Support blocks:
 * Ender chest
 * Chest
 * Trapped chest
+* Tripwire hook
 ### Filler
 Allows a player to shift + right click these blocks to change their "fullness"
 
@@ -46,5 +47,4 @@ Pull request for small changes, for larger changes create an issue first.
 
 ### Todo
 * Filling support for furnaces.
-* Flip support for trip wire hooks.
 * Flip support for all the types of buttons.
