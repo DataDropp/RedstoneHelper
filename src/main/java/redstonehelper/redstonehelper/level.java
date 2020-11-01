@@ -10,9 +10,9 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 
-public class FetchInfo implements Listener {
+public class level implements Listener {
     RedstoneHelper plugin;
-    public FetchInfo(RedstoneHelper instance) {
+    public level(RedstoneHelper instance) {
         plugin = instance;
     }
     @EventHandler

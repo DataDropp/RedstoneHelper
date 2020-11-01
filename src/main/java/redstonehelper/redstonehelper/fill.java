@@ -7,14 +7,13 @@ import org.bukkit.block.data.Levelled;
 import org.bukkit.block.data.type.EndPortalFrame;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 
-public class Filler implements Listener {
+public class fill implements Listener {
     RedstoneHelper plugin;
-    public Filler(RedstoneHelper instance) {
+    public fill(RedstoneHelper instance) {
         plugin = instance;
     }
     @EventHandler

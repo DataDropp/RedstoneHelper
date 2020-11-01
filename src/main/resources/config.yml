@@ -1,4 +1,4 @@
-# RedstoneHelper v1.3
+# RedstoneHelper v1.4
 # Enable or disable the functions of the plugin
 enabled: true
 reverse:
@@ -20,6 +20,7 @@ reverse:
     - "LEVER"
     - "FURNACE"
     - "TRAPPED_CHEST"
+    - "TRIPWIRE_HOOK"
 fillables:
   enabled: true
   types: # Adding your own types here will probably break the plugin.

@@ -8,9 +8,9 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import java.util.Arrays;
 import static org.bukkit.block.BlockFace.*;
 
-public class Reverser implements Listener {
+public class flip implements Listener {
     RedstoneHelper plugin;
-    public Reverser(RedstoneHelper instance) {
+    public flip(RedstoneHelper instance) {
         plugin = instance;
     }
     @EventHandler
