@@ -4,9 +4,9 @@ enabled: true
 reverse:
   # Enable or disable ALL reversals.
   enabled: true
-  #You can add your own types here. Please refer to the API documentation for correct names for the block.
-  #The blocks you ADD here will not be supported.
-  types:
+  #You can add your own types here.
+  #Refer to https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html for the correct block names
+    types:
     - "PISTON"
     - "STICKY_PISTON"
     - "REPEATER"
@@ -15,22 +15,20 @@ reverse:
     - "DISPENSER"
     - "COMPARATOR"
     - "OBSERVER"
-    - "CHEST"
-    - "ENDER_CHEST"
-    - "LEVER"
-    - "FURNACE"
-    - "TRAPPED_CHEST"
-    - "TRIPWIRE_HOOK"
 fillables:
+  #Enable or disable the fill function of this plugin
   enabled: true
-  types: # Adding your own types here will probably break the plugin.
-    # Enable or disable the SUPPORTED fillable blocks.
+  types:
+    # Enable or disable the supported blocks
+    # Do not add your own here, will not do anything.
     COMPOSTER:
       enabled: true
     END_PORTAL_FRAME:
       enabled: true
 level:
+  # Enable or disable fetching the level of a redstone wire
   enabled: true
   types:
+    # Do not add your own here, will not do anything.
     REDSTONE_WIRE:
       enabled: true
