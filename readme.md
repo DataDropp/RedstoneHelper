@@ -48,4 +48,3 @@ Pull request for small changes, for larger changes create an issue first.
 
 ### Todo
 * Filling support for furnaces.
-* Flip support for all the types of buttons.
