@@ -37,7 +37,7 @@ Supported blocks are:
 
 ### Other features
 * Allows players to shift + right click a redstone wire then it'll output the power level to the action bar.
-![](https://cdn-32.anonfiles.com/zcvfe7m1p9/30edf69a-1604337217/Peek%202020-11-02%2008-56.gif)
+![](https://s8.gifyu.com/images/Peek-2020-11-02-08-56.gif)
 
 ### Commands & permissions
 | Command | Permission | Description |
